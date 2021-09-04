@@ -10,7 +10,9 @@
     "start": "harp start",
     "build": "node server.js compile",
     "semantic-release": "semantic-release pre && npm run build && npm publish && semantic-release post",
-    "update-timestamps": "hostname eq 'MacBook-Pro.local' && blog update-timestamps"
+    "update-timestamps": "hostname eq 'MacBook-Pro.local' && blog update-timestamps",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "config": {
     "ghooks": {
@@ -27,14 +29,15 @@
     "elasticsearch": "^4.0.2",
     "es6-promise": "^3.1.2",
     "glob": "~4.0.5",
-    "harp": "^0.17.0",
+    "harp": "^0.40.3",
     "moment": "~2.8.2",
     "promise": "^6.0.1",
     "router-stupid": "~0.7.0",
     "semver": "~3.0.1",
     "shelljs": "^0.4.0",
     "st": "~0.5.1",
-    "then-fs": "^1.0.8"
+    "then-fs": "^1.0.8",
+    "@snyk/protect": "latest"
   },
   "repository": {
     "type": "git",
@@ -44,5 +47,6 @@
     "ghooks": "^1.0.3",
     "inquirer": "^0.12.0",
     "semantic-release": "^4.3.5"
-  }
+  },
+  "snyk": true
 }
