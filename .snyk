@@ -1,0 +1,39 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.21.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:hawk:20160119':
+    - harp > terraform > node-sass > pangyp > request > hawk:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:http-signature:20150122':
+    - harp > terraform > node-sass > pangyp > request > http-signature:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:mime:20170907':
+    - harp > connect > send > mime:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:minimatch:20160620':
+    - harp > terraform > minify > html-minifier > cli > glob > minimatch:
+        patched: '2021-09-04T20:01:19.374Z'
+    - harp > terraform > node-sass > pangyp > minimatch:
+        patched: '2021-09-04T20:01:19.374Z'
+    - harp > terraform > node-sass > pangyp > glob > minimatch:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:request:20160119':
+    - harp > terraform > node-sass > pangyp > request:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:tar:20151103':
+    - harp > download-github-repo > download > decompress > tar:
+        patched: '2021-09-04T20:01:19.374Z'
+    - harp > terraform > node-sass > pangyp > tar:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:tunnel-agent:20170305':
+    - harp > terraform > node-sass > pangyp > request > tunnel-agent:
+        patched: '2021-09-04T20:01:19.374Z'
+  'npm:uglify-js:20151024':
+    - harp > terraform > jade > transformers > uglify-js:
+        patched: '2021-09-04T20:01:19.374Z'
+    - harp > terraform > minify > uglify-js:
+        patched: '2021-09-04T20:01:19.374Z'
+    - harp > terraform > minify > html-minifier > uglify-js:
+        patched: '2021-09-04T20:01:19.374Z'
